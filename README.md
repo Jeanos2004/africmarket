@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍽️ AfriMarket - E-commerce de Produits Alimentaires Africains
 
-## Getting Started
+Un site e-commerce moderne pour vendre des produits alimentaires africains avec intégration restaurant, développé avec Next.js 14, TypeScript et Tailwind CSS.
 
-First, run the development server:
+## 🌟 Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 🛒 E-commerce
+- **Catalogue de produits** : Épicerie sèche, produits frais, produits locaux
+- **Panier d'achat** : Gestion complète avec contexte React
+- **Paiement** : Orange Money, MTN Money, Espèces
+- **Livraison** : À domicile ou retrait au restaurant
+
+### 🍽️ Restaurant
+- **Menu du soir** : Plats africains authentiques
+- **Promotions croisées** : Offres spéciales entre e-commerce et restaurant
+- **Horaires** : Service du soir (18h-22h)
+
+### 📱 Interface
+- **Design responsive** : Optimisé mobile et desktop
+- **Palette africaine** : Couleurs chaudes et authentiques
+- **UX intuitive** : Navigation claire et CTA visibles
+
+## 🎨 Design & Thématique
+
+### Couleurs
+- **Terre cuite** : `#D2691E` (marron chaleureux)
+- **Vert feuille** : `#228B22` (nature et fraîcheur)
+- **Jaune mangue** : `#FFC324` (énergie et chaleur)
+- **Ivoire** : `#FFF8E7` (fond doux)
+
+### Typographie
+- **Police** : Quicksand (arrondie et chaleureuse)
+- **Style** : Moderne avec touches traditionnelles
+
+## 🚀 Technologies
+
+- **Framework** : Next.js 14 avec App Router
+- **Language** : TypeScript
+- **Styling** : Tailwind CSS
+- **État** : React Context (panier)
+- **Icons** : Lucide React
+- **Animations** : Framer Motion
+
+## 📁 Structure du Projet
+
+```
+src/
+├── app/                    # Pages Next.js
+│   ├── catalogue/         # Catalogue produits
+│   ├── panier/           # Panier d'achat
+│   ├── restaurant/       # Menu restaurant
+│   ├── blog/             # Astuces cuisine
+│   └── layout.tsx        # Layout global
+├── components/           # Composants réutilisables
+│   ├── Header.tsx       # Navigation + CTA
+│   ├── Footer.tsx       # Pied de page
+│   ├── ProductCard.tsx  # Carte produit
+│   ├── RestaurantMenu.tsx # Menu restaurant
+│   ├── PaymentIcons.tsx # Moyens de paiement
+│   └── DeliveryIcons.tsx # Options livraison
+├── contexts/            # Contextes React
+│   └── CartContext.tsx  # Gestion panier
+└── styles/              # Styles globaux
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Cloner le projet**
+```bash
+git clone [url-du-repo]
+cd ecommerce
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Installer les dépendances**
+```bash
+npm install
+```
 
-## Learn More
+3. **Lancer en développement**
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Ouvrir dans le navigateur**
+```
+http://localhost:3000
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Produits Disponibles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Épicerie Sèche
+- Riz parfumé 5kg
+- Huile de palme 1L
+- Maggi x24
+- Sucre, sel, farine
+- Conserves et poisson séché
 
-## Deploy on Vercel
+### Produits Frais
+- Bananes plantain
+- Mangues fraîches
+- Tomates, oignons
+- Légumes de saison
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Produits Locaux
+- Attiéké 1kg
+- Fonio, maïs, igname
+- Manioc, haricot, taro
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🍽️ Menu Restaurant
+
+### Plats Principaux
+- Attiéké + Poisson grillé (8.50€)
+- Attiéké + Poulet braisé (7.50€)
+- Riz + Poisson sauce graine (9.00€)
+
+### Promotions
+- 1kg de riz offert pour 2 plats
+- Livraison gratuite à partir de 15€
+- Menu complet à 12€
+
+## 🚚 Livraison & Paiement
+
+### Options de Livraison
+- **Livraison à domicile** : 2€ (30-45 min)
+- **Retrait restaurant** : Gratuit (15 min)
+
+### Moyens de Paiement
+- **Orange Money** : Paiement mobile
+- **MTN Money** : Paiement mobile
+- **Espèces** : Paiement à la livraison
+
+## 🎯 Fonctionnalités Futures
+
+- [ ] Système d'authentification
+- [ ] Paiement en ligne (Stripe)
+- [ ] CMS pour gérer les produits
+- [ ] Support multilingue (Soussou)
+- [ ] Notifications push
+- [ ] Système de fidélité
+
+## 📞 Contact
+
+- **Téléphone** : 01 23 45 67 89
+- **Email** : contact@afrimarket.fr
+- **Adresse** : 123 Rue de l'Afrique
+- **Horaires** : 18h-22h
+
+## 📄 Licence
+
+Ce projet est développé pour AfriMarket. Tous droits réservés.
+
+---
+
+**Développé avec ❤️ pour promouvoir les saveurs africaines**
